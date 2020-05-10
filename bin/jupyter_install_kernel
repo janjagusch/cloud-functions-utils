@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+poetry run python \
+    -m ipykernel install \
+    --user \
+    --name halite-battlestation \
+    --display-name "Python (halite-battlestation)"
