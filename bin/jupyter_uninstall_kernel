@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-echo "y" | jupyter kernelspec uninstall halite-battlestation
