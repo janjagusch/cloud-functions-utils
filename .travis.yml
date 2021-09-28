@@ -14,7 +14,7 @@ cache:
 
 before_install:
   - bin/check_version
-  - export POETRY_VERSION="1.0.3"
+  - export POETRY_VERSION="1.1.4"
   - curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
   - source $HOME/.poetry/env
 
