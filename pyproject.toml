@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cloud-functions-utils"
-version = "0.3.0"
+version = "0.4.0"
 description = "Utilities for Google Cloud Functions."
 authors = ["Jan-Benedikt Jagusch <jan.jagusch@gmail.com>"]
 license = "MIT"
@@ -13,8 +13,8 @@ google-cloud-pubsub = "^1.4.3"
 google-cloud-storage = "^1.28.0"
 
 [tool.poetry.dev-dependencies]
-black = "^19.10b0"
 pylint = "^2.5.0"
+black = "^21.9b0"
 
 [build-system]
 requires = ["poetry>=0.12"]

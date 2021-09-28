@@ -1,8 +1,9 @@
 # Changelog
 
-## Unreleased Changes
+## 0.4.0
 
-- Moved to standalone Git repository.
+- Added `to_bucket_v2` which allows to specify a filepath, instead of providing a string.
+- Deprecated `to_bucket`. Please use `to_bucket_v2` instead.
 
 ## 0.3.0
 
