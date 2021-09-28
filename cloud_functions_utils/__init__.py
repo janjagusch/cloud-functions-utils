@@ -2,13 +2,13 @@
 Helper functions for Google Cloud Services.
 """
 
-from itertools import islice
 import re
+from itertools import islice
 
 from .bigquery import to_table
 from .error_reporting import error_reporting
-from .pub_sub import to_topic, decode
-from .storage import to_bucket
+from .pub_sub import decode, to_topic
+from .storage import to_bucket, to_bucket_v2
 
 
 def chunks(iterable, chunksize=500):
