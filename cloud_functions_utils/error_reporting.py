@@ -45,12 +45,12 @@ class error_reporting:
     Args:
         func (callable): The function you want to decorate.
     """
-    warnings.warn(
-        "This function is deprecated and will be removed in a future release. "
-        "Please use `error_reporting_v2` instead."
-    )
 
     def __init__(self, func):
+        warnings.warn(
+            "This function is deprecated and will be removed in a future release. "
+            "Please use `error_reporting_v2` instead."
+        )
         self._func = func
         self._client = Client()
 
