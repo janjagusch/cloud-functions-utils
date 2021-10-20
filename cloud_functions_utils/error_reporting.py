@@ -22,8 +22,10 @@ def error_reporting_v2(*, raise_error: Optional[bool] = True) -> Callable:
     Returns:
         Callable: A decorator.
     """
+
     def decorator(func: Callable):
         client = Client()
+
         @functools.wraps(func)
         def wrapper(*args, **kwargs):
             try:
@@ -33,7 +35,9 @@ def error_reporting_v2(*, raise_error: Optional[bool] = True) -> Callable:
                 logging.error(error)
                 if raise_error:
                     raise error
+
         return wrapper
+
     return decorator
 
 
