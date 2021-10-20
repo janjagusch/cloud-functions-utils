@@ -10,7 +10,7 @@ from typing import Callable, Optional
 from google.cloud.error_reporting import Client
 
 
-def error_reporting_v2(*, raise_: Optional[bool] = True) -> Callable:
+def error_reporting_v2(*, raise_error: Optional[bool] = True) -> Callable:
     """
     Create decorator that adds error reporting to a function.
 
@@ -31,7 +31,7 @@ def error_reporting_v2(*, raise_: Optional[bool] = True) -> Callable:
             except BaseException as error:
                 client.report_exception()
                 logging.error(error)
-                if raise_:
+                if raise_error:
                     raise error
         return wrapper
     return decorator
