@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cloud-functions-utils"
-version = "0.4.0"
+version = "0.5.0"
 description = "Utilities for Google Cloud Functions."
 authors = ["Jan-Benedikt Jagusch <jan.jagusch@gmail.com>"]
 license = "MIT"

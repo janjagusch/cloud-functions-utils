@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0
+
+- Added `error_reporting_v2`, which allow to specify whether an error should be raised.
+- Deprecated `error_reporting`. Please use `error_reporting_v2` instead.
+- Made package compatible with latest version of `google-cloud` packages.
+
 ## 0.4.0
 
 - Added `to_bucket_v2` which allows to specify a filepath, instead of providing a string.
