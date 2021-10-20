@@ -6,7 +6,7 @@ import re
 from itertools import islice
 
 from .bigquery import to_table
-from .error_reporting import error_reporting
+from .error_reporting import error_reporting, error_reporting_v2
 from .pub_sub import decode, to_topic
 from .storage import to_bucket, to_bucket_v2
 
